@@ -1,0 +1,21 @@
+#container{
+  margin:auto;
+  width: 25%;
+  height: auto;
+  position: relative;
+  top: 200px;
+}
+#wrapper{
+  border: 2px solid green;
+}
+.sessionTimer{
+  position: relative;
+  left: 100px;
+  bottom: 25px;
+}
+
+.breakTimer{
+  position: relative;
+  left: 100px;
+  bottom: 25px;
+}
