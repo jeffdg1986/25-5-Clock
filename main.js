@@ -30,7 +30,7 @@ class TimerSet {
   }
     let minutes = this.timeLeft.innerText.split(":")[0];
     let seconds = this.timeLeft.innerText.split(":")[1];
-    y= setInterval(countdownSD,100);
+    y= setInterval(countdownSD,1000);
     function countdownSD(){
       if(minutes.toString().length <2){
         minutes = "0"+minutes;
