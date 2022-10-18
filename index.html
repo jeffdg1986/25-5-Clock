@@ -7,31 +7,54 @@
     <script src="https://kit.fontawesome.com/66dd3676af.js" crossorigin="anonymous"></script>
     <script src="main.js" type="text/javascript" defer></script>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+
   </head>
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
     <main>
-      <div id="container">
-        <div id="wrapper">
-          <button id="break-decrement">down</button>
-          <label for='break-length' id="break-label">Break Length:</label>
-          <div id="break-length">5</div>
-          <button id="break-increment">up</button>
-          <div id = 'breakTimer' class='breakTimer'>5</div>
+      <h1 class='project-name'>Pomodoro Clock</h1>
+      <section>
+        <h3>About the Pomodoro Clock</h3>
+        <p>The original Pomodoro Clock is an adaptation of a time managment technique
+          developed by Francesco Cirillo in the 1980s. The idea being that people
+          can't (and shouldn't) work like computers. Humans need time to absorb the
+        information they learn and relax their minds. Cirillo showed that roughly a 5 minute
+      break every 20-25 minutes actually results in higher productivity relative to no rest.
+    Take a look at the clock to your right and try it out for yourself.</p>
+      </section>
+      <div id="container" class='container'>
+
+        <div class='break-container'>
+          <button id="break-decrement" class='break-components'><ion-icon name="caret-down-outline" id='decrement'></ion-icon></button>
+          <button id="break-increment" class='break-components'><ion-icon name="caret-up-outline" id='increment'></ion-icon></button>
+          <div id="break-label" class='break-components'>Break</div>
+          <div id="break-length" class='break-components'>5</div>
+          <div id='sometext' class='break-components'>minutes</div>
+
         </div>
-        <div id="wrapper">
-          <button id="session-decrement">down</button>
-          <label id="session-label" for='session-length'>Session Length:</label>
-          <div id="session-length">25</div>
-          <button id="session-increment">up</button>
-          <div id='sessionTimer' class='sessionTimer'>25</div>
+
+        <div class="session-container">
+          <button id="session-decrement" class='session-components'><ion-icon name="caret-down-outline" id='decrement'></ion-icon></button>
+          <button id="session-increment" class='session-components'><ion-icon name="caret-up-outline" id='increment'></ion-icon></button>
+          <div id="session-label" class='session-components'>Session</div>
+          <div id="session-length" class='session-components'>25</div>
+          <div id='sometext' class='session-components'>minutes</div>
         </div>
-          <button id='reset'>Reset</button>
-          <button id='start_stop'>Start/Stop</button>
-          <div id='timer-label'>Session</div>
-          <div id='time-left'>25:00</div>
-          <audio id="beep" src ="C:\Users\jpaul\Music\Sounds\percussion7.wav"></audio>
+
+        <div class='action-container'>
+          <button id='start_stop' class='action-components'><img src="C:\Users\jpaul\Pictures\play_pause_icon_cropped.png" class='play_pause'/></button>
+          <button id='reset' class='action-components'><ion-icon id='reset-icon' name="refresh-outline"></ion-icon></button>
+        </div>
+
+          <div id='timer-label' class='timer-type'>Session</div>
+          <div class='timer-type'>Time Remaining</div>
+          <div id='time-left' class='timer'>25:00</div>
+
+          <h5 class='ownedBy'>Designed and programmed by:<br> Jeff McCormick</h5>
+        <audio id="beep" src ="C:\Users\jpaul\Music\Sounds\percussion7.wav"></audio>
       </div>
     </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body)
     </html>
