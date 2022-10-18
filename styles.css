@@ -1,21 +1,132 @@
-#container{
-  margin:auto;
-  width: 25%;
-  height: auto;
-  position: relative;
-  top: 200px;
-}
-#wrapper{
-  border: 2px solid green;
-}
-.sessionTimer{
-  position: relative;
-  left: 100px;
-  bottom: 25px;
+body{
+  margin: 5px;
+  background-color: tan;
 }
 
-.breakTimer{
-  position: relative;
-  left: 100px;
-  bottom: 25px;
+.project-name{
+text-decoration: underline;
 }
+p{
+  width: 400px;
+}
+.break-components, .session-components, .action-components{
+  display: inline-block;
+}
+
+.container{
+  width: 450px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, green 20%, silver);
+  outline-style: groove;
+  outline-color: invert;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 500px;
+  bottom: 200px
+}
+
+.break-container{
+  position: relative;
+  top: 110px;
+  font-size: 24px;
+  color: white;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.session-container{
+  position: relative;
+  top: 120px;
+  font-size: 24px;
+  color: white;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.action-container{
+  position: relative;
+  top: 300px;
+  color: white;
+  width: 28%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#start_stop{
+  display: inline-block;
+  position: relative;
+  float:left;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5%;
+  margin: none;
+  padding-top: 5px;
+  background-color: #895CD9;
+}
+
+#reset{
+  float:right;
+  background-color: #895CD9;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+#reset-icon{
+height: 37px;
+width: 35px;
+}
+
+.play_pause{
+  border: 0px;
+  outline-width: 0px;
+  background-color: #895CD9;
+  width: 50px;
+  height: auto;
+}
+
+#increment, #decrement{
+  height: 20px;
+  width: 20px;
+  background-color: #895CD9;
+}
+
+ #session-decrement, #session-increment, #break-decrement, #break-increment{
+   background-color: #895CD9;
+   border: 2px solid black;
+   border-radius: 50%;
+   padding-top: 4px;
+ }
+
+ .timer{
+   position: relative;
+   top: 150px;
+   width: 35%;
+   height: 10%;
+   background-color: black;
+   color: white;
+   left: 32%;
+   text-align: center;
+   font-size: 40px;
+   border: 2px solid white;
+ }
+
+ .timer-type{
+   position: relative;
+   display: inline-block;
+   top: 140px;
+   left: 32%;
+   color: white;
+   text-align: center;
+   font-size: 16px;
+ }
+
+ .ownedBy{
+   position: relative;
+   top: 220px;
+   color: black;
+   text-align: center;
+ }
